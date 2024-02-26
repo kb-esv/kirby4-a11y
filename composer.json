@@ -1,0 +1,27 @@
+{
+    "name": "kb-esv/kirby4-a11y",
+    "description": "Kirbytext for accessibility",
+    "license": "MIT",
+    "type": "kirby-plugin",
+    "require": {
+        "getkirby/composer-installer": "^1.1"
+    },
+    "authors": [
+        {
+            "name": "Kompetenzzentrum Barrierefreiheit Volmarstein",
+            "email": "github@kb-esv.de"
+        },
+        {
+            "name": "Frank Berker",
+            "email": "fb@kb-esv.de"
+        },
+        {
+            "name": "Frank Reins",
+            "email": "fr@kb-esv.de"
+        },
+        {
+            "name": "Birgit Scheer",
+            "email": "bs@kb-esv.de"
+        }
+    ]
+}
