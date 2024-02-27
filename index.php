@@ -53,8 +53,9 @@ Kirby::plugin('kbv/a11y', [
             ],
             'html' => function ($tag) {
                 $abbr = $tag->value ?? '';
-                $text = $tag->text ?? '';
-                $lang = $tag->lang ? " lang=\"" . $lang . "\"" : '';
+                $text = $tag->text ?? '';                
+                $lang = $tag->attr('lang','');
+                $lang = $lang ? " lang=\"" . $lang . "\"" : '';
                 $class = $tag->class ? " class=\"".$tag->class."\"" : '';
                 return "<abbr title=\"" . $text . "\"" . $lang . $class . ">" . $abbr . "</abbr>";
             }
