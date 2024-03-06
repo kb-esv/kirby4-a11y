@@ -25,7 +25,7 @@ composer require kb-esv/kirby4-a11y
 
 ## Usage
 
-### Change to an English phrase/text
+### Change to a phrase/text in an other language
 
 Examples:
 
