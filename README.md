@@ -25,7 +25,9 @@ composer require kb-esv/kirby4-a11y
 
 ## Usage
 
-Change to an English phrase/text
+### Change to an English phrase/text
+
+Examples:
 
 ```
 In England sagen wir: „(lang: en text: It's raining cats and dogs)“
@@ -49,13 +51,54 @@ or short
 In Germany we say: „(de: Es regnet wie aus Kübeln)“
 ```
 
-### Additional attributes
+Change to a phrase or a text in an other languages, e.g. french
+
+```
+In France the Value Added Tax is called (lang: fr text: Taxe sur la Valeur Ajoutée)
+```
+
+Additional attributes:
 
 You can use the following additional attributes:
 
-- lang: RFC 5646: Tag for Identifying Languages
+- lang: RFC 5646 Tag for Identifying Languages
 - text: Set the text
-- class: Set a class for css
+- class: Set a class for additional css
+
+### Abbreviations
+
+Examples:
+
+```
+(abbr: imho text: In My Humble Opinion)
+```
+
+```
+(abbr: TVA text: Taxe sur la Valeur Ajoutée lang:fr)
+```
+
+```
+(abk: Abk. text: Abkürzung)
+```
+
+Additional attributes:
+
+You can use the following additional attributes:
+
+- lang: RFC 5646 Tag for Identifying Languages
+- text: Set the written out text of the abbreviation
+- class: Set a class for additional css
+
+### CSS
+
+The styles can be customized if required, e.g.:
+
+```
+abbr[title] {
+  cursor: help;
+  text-decoration-skip-ink: none;
+}
+```
 
 ## License
 
